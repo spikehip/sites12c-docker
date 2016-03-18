@@ -2,7 +2,8 @@ readTemplate("%s/weblogic/wlserver/common/templates/wls/wls.jar" % os.environ['P
 addTemplate("%s/weblogic/wlserver/common/templates/wls/wls_coherence_template.jar" % os.environ['PWD'])
 addTemplate("%s/weblogic/oracle_common/common/templates/wls/oracle.jrf_template.jar" % os.environ['PWD'])
 addTemplate("%s/weblogic/em/common/templates/wls/oracle.em_wls_template.jar" % os.environ['PWD'])
-addTemplate("%s/weblogic/wcsites/common/templates/wls/oracle.wcsites.template.jar" % os.environ['PWD'])
+addTemplate("%s/weblogic/wcsites/common/templates/wls/oracle.wcsites.examples.template.jar" % os.environ['PWD'])
+addTemplate("%s/weblogic/wcsites/common/templates/wls/oracle.wcsites.visitorservices.template.jar" % os.environ['PWD'])
 
 # set pw
 cd('Servers/AdminServer')
