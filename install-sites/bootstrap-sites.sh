@@ -18,7 +18,7 @@ sed \
  -e "s/cas\.portnumber=.*/cas\.portnumber=$PORT/" \
  -e "s/cas\.hostname=.*/cas\.hostname=$HOST/" \
  -e "s/cas\.hostnameActual=.*/cas\.hostnameActual=$HOST/" \
- -e "s/cas\.hostnameLocal=.*/cas\.hostnameLocal=localhost/" \
+ -e "s/cas\.hostnameLocal=.*/cas\.hostnameLocal=$HOST/" \
  -e "s/cas\.portnumberLocal=.*/cas\.portnumberLocal=$PORT/" \
  -e "s/password=.*/password=$PASSWORD/" \
  -e "s/admin.user=.*/admin.user=ContentServer/" \
