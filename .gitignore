@@ -5,3 +5,5 @@ install-sites/host.txt
 install-sites/password.txt
 install-sites/db.txt
 docker-compose.yml
+base-sites/*.zip
+base-weblogic/*.zip
