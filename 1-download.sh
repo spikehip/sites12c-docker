@@ -11,7 +11,7 @@ if [ $image_exists -gt 0 ]; then
   echo "Skipping $i"
 else
   echo ============  BUILD owcs/1-$i:latest 
-  installer_file=`cat $i/Dockerfile | awk '/RUN java -jar downloader.jar/ {match($0, "sources.link=([a-z\\\\.]+)$",a)}END{print a[1]}'`
+  installer_file=`cat $i/Dockerfile | awk '/RUN java -jar downloader.jar/ {split($0,a,"=")}END{print a[2]}'`
   echo "verifying $installer_file"
   if [ ! -z $installer_file ] && [ -e "$i/$installer_file.zip" ]; then
     echo "OK, $installer_file exists, replacing Dockerfile RUN java -jar downloader.jar with ADD $installer_file"

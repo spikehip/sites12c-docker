@@ -7,3 +7,4 @@ install-sites/db.txt
 docker-compose.yml
 base-sites/*.zip
 base-weblogic/*.zip
+base-oracle/*.zip
