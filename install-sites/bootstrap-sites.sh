@@ -26,7 +26,7 @@ sed \
  -e "s/app.user=.*/app.user=fwadmin/" \
  -e "s/oracle.wcsites.examples=.*/oracle.wcsites.examples=true/" \
  -e "s/oracle.wcsites.examples.fsii=.*/oracle.wcsites.examples.fsii=true/" \
- -e "s/oracle.wcsites.examples.avisports=.*/oracle.wcsites.examples.avisports=true" \
- -e "s/oracle.wcsites.examples.Samples=.*/oracle.wcsites.examples.Samples=true" \
+ -e "s/oracle.wcsites.examples.avisports=.*/oracle.wcsites.examples.avisports=true/" \
+ -e "s/oracle.wcsites.examples.Samples=.*/oracle.wcsites.examples.Samples=true/" \
  <weblogic/wcsites/webcentersites/sites-home/template/config/wcs_properties_bootstrap.ini \
  >weblogic/user_projects/domains/base_domain/wcsites/wcsites/config/wcs_properties_bootstrap.ini
