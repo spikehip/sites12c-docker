@@ -15,8 +15,9 @@ else
   echo "verifying $installer_file"
   if [ ! -z $installer_file ] && [ -e "$i/$installer_file.zip" ]; then
     echo "OK, $installer_file exists, replacing Dockerfile RUN java -jar downloader.jar with ADD $installer_file"
+    cp $i/Dockerfile $i/Dockerfile.template
     sed -e "s/RUN java -jar downloader.jar sources.link=$installer_file/ADD $installer_file.zip \/$installer_file.zip/" \
-      < $i/Dockerfile \
+      < $i/Dockerfile.template \
       > $i/Dockerfile
   fi 
   docker build -t owcs/1-$i:latest $i
