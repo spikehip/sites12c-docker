@@ -71,6 +71,15 @@ To start work you need to
 ```
 git clone https://github.com/sciabarra/ssites12c-docker
 ```
+# Step 00: download your selected oracle installer kit version and place them accordingly
+
+If you're building locally and you'd like to avoid downloading the installer kits every time you re-build your images you can place them
+in the respective folders. 
+For instructions on which installer to place into which folder under what name, run 
+
+```
+/bin/bash 00-list-downloads.sh
+```
 
 # Step 0: creating a VM on Amazon Cloud
 
